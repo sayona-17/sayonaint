@@ -1,220 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayona Shamej | Portfolio</title>
-    <style>
-        /* Minimalist Light Theme Styles */
-        :root {
-            --bg-color: #fafafa;
-            --text-main: #2d3748;
-            --text-muted: #718096;
-            --accent-color: #4a5568;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayona Shamej | Portfolio</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 0 20px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 60px 0;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        header {
-            margin-bottom: 50px;
-        }
+body{
+    background:#000000;
+    color:#ffffff;
+    min-height:100vh;
+    line-height:1.7;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 8px;
-        }
+/* Container */
 
-        .subtitle {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            margin-bottom: 15px;
-        }
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
 
-        .contact-links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+/* Header */
 
-        .contact-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
-        }
+header{
+    text-align:center;
+    margin-bottom:60px;
+}
 
-        .contact-links a:hover {
-            border-color: var(--accent-color);
-        }
+.profile-circle{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    margin:auto;
+    background:linear-gradient(135deg,#10b981,#fbbf24);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:20px;
+    box-shadow:0 0 25px rgba(16,185,129,0.35);
+}
 
-        section {
-            margin-bottom: 50px;
-        }
+h1{
+    font-size:4rem;
+    color:#fbbf24;
+    font-weight:700;
+}
 
-        h2 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--accent-color);
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-        }
+.subtitle{
+    font-size:1.2rem;
+    color:#a1a1aa;
+    margin-top:10px;
+}
 
-        p {
-            color: var(--text-main);
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
+.contact-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
 
-        /* Skills Layout */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.contact-links a{
+    text-decoration:none;
+    color:#ffffff;
+    background:#151515;
+    border:1px solid #2a2a2a;
+    padding:10px 20px;
+    border-radius:50px;
+    transition:0.3s;
+}
 
-        .skill-tag {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 6px 14px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: var(--text-main);
-        }
+.contact-links a:hover{
+    background:#10b981;
+    transform:translateY(-3px);
+}
 
-        /* Certificates Layout */
-        .cert-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
+/* Sections */
 
-        .cert-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-main);
-        }
+section{
+    background:#111111;
+    border:1px solid #222222;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+    transition:0.3s;
+}
 
-        .cert-org {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-        }
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(16,185,129,0.15);
+}
 
-        .cert-desc {
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
+h2{
+    color:#10b981;
+    margin-bottom:20px;
+    font-size:1.5rem;
+    font-weight:600;
+}
 
-        footer {
-            margin-top: 80px;
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-    </style>
+p{
+    color:#d4d4d8;
+}
+
+/* Skills */
+
+.skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-tag{
+    background:#151515;
+    border:1px solid #2a2a2a;
+    padding:10px 18px;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.skill-tag:hover{
+    background:#10b981;
+    transform:scale(1.05);
+}
+
+/* Certification Cards */
+
+.cert-card{
+    background:#151515;
+    border:1px solid #2a2a2a;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.cert-card:hover{
+    transform:translateX(8px);
+    border-color:#10b981;
+}
+
+.cert-title{
+    font-size:1.1rem;
+    font-weight:600;
+    color:#ffffff;
+}
+
+.cert-org{
+    color:#a1a1aa;
+    margin:6px 0 12px;
+}
+
+/* Education */
+
+.education-card{
+    background:#151515;
+    border-left:4px solid #10b981;
+    padding:20px;
+    border-radius:10px;
+}
+
+.education-card h3{
+    margin-bottom:8px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#a1a1aa;
+    font-size:0.9rem;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.7rem;
+    }
+
+    .profile-circle{
+        width:110px;
+        height:110px;
+        font-size:38px;
+    }
+
+    section{
+        padding:20px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        
-        <header>
-            <h1>Sayona Shamej</h1>
-            <div class="subtitle">Computer Science & Data Science Student</div>
-            <div class="contact-links">
-                <a href="mailto:sayonashamej@gmail.com">sayonashamej@gmail.com</a>
-                <a href="https://www.linkedin.com/in/sayona-shamej-518b2a290" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            </div>
-        </header>
+<div class="container">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a 20-year-old undergraduate student pursuing a B.Tech degree in <strong>Computer Science Engineering and Data Science</strong> (2023 - 2027) at <strong>St. Thomas College of Engineering and Technology</strong>. I am passionate about analyzing data, developing software solutions, and continuous learning in the technology space.
-            </p>
-        </section>
+<header>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">HTML</span>
-            </div>
-        </section>
+<div class="profile-circle">
+SS
+</div>
 
-        <section id="certifications">
-            <h2>Certifications & Internship</h2>
-            
-            
+<h1>Sayona Shamej</h1>
 
-            <div class="cert-card">
-                <div class="cert-title">Neovent Innovation Certification</div>
-                <div class="cert-org">Issued by Neovent Innovation</div>
-                <p class="cert-desc">
-                    Completed a Three weeks Internship program in the field of "Python For Data Science" during the year 2025 by the remarks of Neovent Innovations.
-                </p>
-            </div>
+<div class="subtitle">
+Computer Science Engineering & Data Science Student
+</div>
 
-            <div class="cert-card">
-                <div class="cert-title">RAET Certification</div>
-                <div class="cert-org">Issued by RAET</div>
-                <p class="cert-desc">
-                    Presented a paper on the title of "Students Performance Prediction In Online Platform" during the second national conference on RAET held at St.Thomas College Of Engineering And Technology during the year 2026.
-                </p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-title">Power BI Certification</div>
-                <div class="cert-org">Data Analytics & Visualization</div>
-                <p class="cert-desc">
-                    Participated in "Dashnova - A Hands On Workshop On Power BI" during the year 2025.
-                </p>
-            </div>
-        </section>
+<div class="contact-links">
+    <a href="mailto:sayonashamej@gmail.com">📧 Email</a>
+    <a href="tel:8590032906">📱 8590032906</a>
+    <a href="https://www.linkedin.com/in/sayona-shamej-518b2a290" target="_blank">
+        🔗 LinkedIn
+    </a>
+</div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div style="margin-bottom: 10px;">
-                <strong>St. Thomas College of Engineering and Technology</strong>
-                <div style="color: var(--text-muted); font-size: 0.9rem;"> Third Year B.Tech student currently taking the branch  Computer Science Engineering & Data Science | 2023 - 2027</div>
-            </div>
-        </section>
+</header>
 
-        <footer>
-            <p>&copy; 2026 Sayona Shamej. All rights reserved.</p>
-        </footer>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate B.Tech student specializing in Computer Science Engineering and Data Science at St. Thomas College of Engineering and Technology (2023–2027). I enjoy working with data, developing software solutions, and exploring innovative technologies that solve real-world problems.
+    </p>
+</section>
 
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">Power BI</div>
+        <div class="skill-tag">HTML</div>
+        <div class="skill-tag">CSS</div>
+        <div class="skill-tag">C++</div>
+        <div class="skill-tag">Data Analytics</div>
     </div>
+</section>
+
+<section id="certifications">
+
+    <h2>Certifications & Internship</h2>
+
+    <div class="cert-card">
+        <div class="cert-title">Python For Data Science Internship</div>
+        <div class="cert-org">Neovent Innovation • 2025</div>
+        <p>
+            Completed a three-week internship focused on Python programming, data analysis, and data science fundamentals.
+        </p>
+    </div>
+
+    <div class="cert-card">
+        <div class="cert-title">Students Performance Prediction In Online Platform</div>
+        <div class="cert-org">RAET National Conference • 2026</div>
+        <p>
+            Presented a research paper at the national conference held at St. Thomas College of Engineering and Technology.
+        </p>
+    </div>
+
+    <div class="cert-card">
+        <div class="cert-title">Dashnova Power BI Workshop</div>
+        <div class="cert-org">Data Analytics & Visualization • 2025</div>
+        <p>
+            Participated in a hands-on workshop on Power BI focusing on dashboard creation and business intelligence concepts.
+        </p>
+    </div>
+
+</section>
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+        <h3>St. Thomas College of Engineering and Technology</h3>
+
+        <p><strong>B.Tech in Computer Science Engineering & Data Science</strong></p>
+
+        <p>2023 - 2027</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Sayona Shamej. All Rights Reserved.</p>
+</footer>
+
+</div>
 
 </body>
 </html>
