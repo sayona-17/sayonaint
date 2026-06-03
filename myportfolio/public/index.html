@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayona Shamej | Portfolio</title>
+    <style>
+        /* Minimalist Light Theme Styles */
+        :root {
+            --bg-color: #fafafa;
+            --text-main: #2d3748;
+            --text-muted: #718096;
+            --accent-color: #4a5568;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact-links a:hover {
+            border-color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        p {
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Skills Layout */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        /* Certificates Layout */
+        .cert-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .cert-org {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .cert-desc {
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Sayona Shamej</h1>
+            <div class="subtitle">Computer Science & Data Science Student</div>
+            <div class="contact-links">
+                <a href="mailto:sayonashamej@gmail.com">sayonashamej@gmail.com</a>
+                <a href="https://www.linkedin.com/in/sayona-shamej-518b2a290" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a 20-year-old undergraduate student pursuing a B.Tech degree in <strong>Computer Science Engineering and Data Science</strong> (2023 - 2027) at <strong>St. Thomas College of Engineering and Technology</strong>. I am passionate about analyzing data, developing software solutions, and continuous learning in the technology space.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML</span>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications & Internship</h2>
+            
+            
+
+            <div class="cert-card">
+                <div class="cert-title">Neovent Innovation Certification</div>
+                <div class="cert-org">Issued by Neovent Innovation</div>
+                <p class="cert-desc">
+                    Completed a Three weeks Internship program in the field of "Python For Data Science" during the year 2025 by the remarks of Neovent Innovations.
+                </p>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-title">RAET Certification</div>
+                <div class="cert-org">Issued by RAET</div>
+                <p class="cert-desc">
+                    Presented a paper on the title of "Students Performance Prediction In Online Platform" during the second national conference on RAET held at St.Thomas College Of Engineering And Technology during the year 2026.
+                </p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-title">Power BI Certification</div>
+                <div class="cert-org">Data Analytics & Visualization</div>
+                <p class="cert-desc">
+                    Participated in "Dashnova - A Hands On Workshop On Power BI" during the year 2025.
+                </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div style="margin-bottom: 10px;">
+                <strong>St. Thomas College of Engineering and Technology</strong>
+                <div style="color: var(--text-muted); font-size: 0.9rem;"> Third Year B.Tech student currently taking the branch  Computer Science Engineering & Data Science | 2023 - 2027</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Sayona Shamej. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
